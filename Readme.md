@@ -1,0 +1,2 @@
+### Selenium to enroll in college classes
+At my college, if I want to take all the classes, I need to open the website and then enroll in all of them. But often the site is down, so it takes hours to do something very simple. After a few semesters I gave up trying to do it manually and decided to try to create this automation. The idea is simple, I need to go to the University website and sign up for classes without actually having to do so.
