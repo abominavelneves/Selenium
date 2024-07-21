@@ -9,7 +9,9 @@ print('Username: ')
 username=input()
 print('Password: ')
 password=input()
-
+print('Options: ')
+print('1.Regular \n2.Extraordinary \n3.Summer Classes')
+option=int(input())
 
 ##Using Chrome
 driver=webdriver.Chrome()
@@ -22,8 +24,9 @@ try:
     driver.find_element(By.NAME,"submit").click()
     second=WebDriverWait(driver,50).until(EC.presence_of_element_located((By.ID,"conteudo")))
     ensino=driver.find_element(By.CLASS_NAME,"ThemeOfficeMainItem")
-    AC(driver).move_to_element(ensino).click().move_to_element_with_offset(ensino,0,250).click().move_by_offset(390,0).click().perform()
-    
+    if option==1:
+        AC(driver).move_to_element(ensino).click().move_to_element_with_offset(ensino,0,250).click().move_by_offset(390,0).click().perform()
+
 finally:
     WebDriverWait(driver,10)
     driver.quit()
