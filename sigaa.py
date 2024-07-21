@@ -16,7 +16,7 @@ try:
     driver.find_element(By.ID,"username").send_keys(username)
     driver.find_element(By.ID,"password").send_keys(password)
     driver.find_element(By.NAME,"submit").click()
-    second=WebDriverWait(driver,50).until(EC.presence_of_element_located((By.ID,"menu-dropdown")))
+    second=WebDriverWait(driver,50).until(EC.presence_of_element_located((By.ID,"conteudo")))
     ensino=driver.find_element(By.CLASS_NAME,"ThemeOfficeMainItem")
     AC(driver).move_to_element(ensino).click().perform()
     
