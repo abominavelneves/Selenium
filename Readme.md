@@ -14,4 +14,5 @@ At Universitty website there is three options of enrollment:
 1. Regular 
 2. Summer Classes
 3. Extraordinary
+
 Basically, It will enroll me in the classes I want in the semester after I choose one of the options.
