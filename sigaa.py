@@ -23,10 +23,15 @@ try:
     driver.find_element(By.ID,"password").send_keys(password)
     driver.find_element(By.NAME,"submit").click()
     second=WebDriverWait(driver,50).until(EC.presence_of_element_located((By.ID,"conteudo")))
+    ## Cookies
+    cookie=driver.find_element(By.ID,"sigaa-cookie-consent")
+    AC(driver).move_to_element(cookie).move_to_element_with_offset(cookie,490,120).click()
+    WebDriverWait(driver,50)
     ensino=driver.find_element(By.CLASS_NAME,"ThemeOfficeMainItem")
     if option==1:
         AC(driver).move_to_element(ensino).click().move_to_element_with_offset(ensino,0,250).click().move_by_offset(390,0).click().perform()
-
+    elif option==2:
+        AC(driver).move_to_element(ensino).click().move_to_element_with_offset(ensino,0,250).click().move_by_offset(390,0).move_by_offset(0,40).click().perform() 
 finally:
     WebDriverWait(driver,10)
     driver.quit()

@@ -15,4 +15,18 @@ At Universitty website there is three options of enrollment:
 2. Summer Classes
 3. Extraordinary
 
-Basically, It will enroll me in the classes I want in the semester after I choose one of the options.
+Basically, It will enroll me in the classes I want in the semester after I choose one of the options. I want to make this program useful for me first then I want to make it avaible for other students at my college.
+### Progress
+I divided the progress in some tasks:
+- [ ] Cookies problems
+- [ ] Regular Enrollment
+    - [x] Finding Regular
+    - [ ] Selecting my Classes
+    - [ ] Solve the Password Problem
+    - [ ] Return the Result
+- [ ] Summer Classes
+- [ ] Extraordinary
+    - [ ] Finding Extraordinary
+    - [ ] Selecting my Classes
+    - [ ] Password Problem
+    - [ ] Return the Result
